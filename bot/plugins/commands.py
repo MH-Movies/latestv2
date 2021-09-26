@@ -35,7 +35,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/CrazyBotsz"
+                                    '👉One Click Magic👈', url="https://t.me/movies_Hubh2"
                                 )
                         ]
                     ]
@@ -47,17 +47,14 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('Developers', url='https://t.me/CrazyBotsz'),
-        InlineKeyboardButton('Source Code 🧾', url ='https://github.com/CrazyBotsz/Adv-Auto-Filter-Bot-V2')
+        InlineKeyboardButton('❓️ANY DOUBT❓️', url='https://t.me/movies_Hubh2')
     ],[
-        InlineKeyboardButton('Support 🛠', url='https://t.me/CrazyBotszGrp')
-    ],[
-        InlineKeyboardButton('Help ⚙', callback_data="help")
+        InlineKeyboardButton('🛠️CONFIGURE🛠️', callback_data="help")
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
     
-   await bot.send_photo(
+     await bot.send_photo(
         chat_id=update.chat.id,
         photo = 'https://telegra.ph/file/3ccccbdb70ca3fb14db06.jpg',
         caption=Translation.START_TEXT.format(
@@ -70,10 +67,7 @@ async def start(bot, update):
 @Client.on_message(filters.command(["help"]) & filters.private, group=1)
 async def help(bot, update):
     buttons = [[
-        InlineKeyboardButton('Home ⚡', callback_data='start'),
-        InlineKeyboardButton('About 🚩', callback_data='about')
-    ],[
-        InlineKeyboardButton('Close 🔐', callback_data='close')
+        InlineKeyboardButton('⭕️POWER OFF⭕️', callback_data='close')
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -91,8 +85,7 @@ async def help(bot, update):
 async def about(bot, update):
     
     buttons = [[
-        InlineKeyboardButton('Home ⚡', callback_data='start'),
-        InlineKeyboardButton('Close 🔐', callback_data='close')
+        InlineKeyboardButton('⭕️POWER OFF⭕️', callback_data='close')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     
